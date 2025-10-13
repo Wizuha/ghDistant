@@ -1,2 +1,3 @@
 placeholder v1
 utilise constantes (placeholder)
+maj taille + ajustement texte (placeholder)
