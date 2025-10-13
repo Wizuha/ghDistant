@@ -1,2 +1,1 @@
-placeholder v1
-utilise constantes (placeholder)
+C4 : couleur du texte principal en bleu
