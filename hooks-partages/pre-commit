@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Création du répertoire de suivi s'il n'existe pas
+mkdir -p suivi
+
+# Demande à l'utilisateur s'il veut créer le fichier
+read -p "Souhaitez-vous enregistrer un suivi du commit ? (y/[n]) " yn < /dev/tty
+yn=${yn:n}
+
+case $yn in
+  [Yy]* )
+      echo "commit vérifié le $(date)" > suivi/commitInfo.txt
+      git add suivi/commitInfo.txt
+      echo "✅ Fichier de suivi ajouté."
+      ;;
+  [Nn]* )
+      echo "❎ Pas de fichier ajouté."
+      ;;
+esac
+
+exit 0
+
